@@ -1,0 +1,496 @@
+<DOCTYPE html >
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Lobster+Two:wght@400;700&display=swap" rel="stylesheet">
+ </head>
+ <style>
+ 
+
+   p,
+  div {
+    font-family:  'Lobster Two', cursive;
+
+    
+  }
+  section {
+    padding: 2px;
+  }
+  .first-paragraph {
+    color: red;
+    font-size: 50px;
+    text-align: start;
+  }
+  .second-paragraph {
+    text-align: start;
+  }
+  [data-type='primary'] {
+    color: blue;
+    font-size: 50px;
+    margin-bottom:10;
+    text-align: start;
+  }
+   [data-type='secondry']{
+    color: hotpink;
+    font-size: 40px;
+   }
+   .image {
+    width:400px; 
+    height:500px;
+    display: block;
+   }
+   .first-word {
+    color:red ;
+   }
+   .secondry-word {
+    color:hotpink;
+   }
+   a:hover {
+    color:green;
+   }
+   a:active {
+    color:hotpink;
+
+   }
+   [data-type='secondry'] {
+    margin-bottom:30px;
+   }
+   .address-row {
+    margin-bottom:0px;
+    margin-top:30px;
+   }
+   input:invalid {
+  border-color: red;
+}
+
+input:valid {
+  border-color: green;
+}
+
+input {
+  min-width: 320px;
+  padding: 0.5rem 1rem;
+  line-height: 1;
+  font: inherit;
+  border: 1px solid var(--color-mid);
+  border-radius: 0.25rem;
+}
+
+.info {
+  font-size: 0.9rem;
+  font-style: italic;
+  margin-block-start: 0.5em;
+}
+
+   input:focus {
+    border-color:black;
+   }
+    .text-show {
+      font-family: Roboto;
+    }
+    #content:target {
+      background:green;
+    }
+    .password-prompt {
+      display: none;
+    }
+    .form-container:focus-within .password-prompt {
+      display: block;
+    }
+    button:focus {
+      outline: none;
+    }
+    
+    button:focus-visible {
+      outline: 2px dashed blue;
+      outline-offset: 2px;
+    }
+    #recipe:target,
+    #recipe:target ~ * {
+      background: 
+      lightgoldenrodyellow;
+    }
+    h2 {
+      display: inline-block;
+    }
+    h2,
+    p {
+      padding:0.25em;
+    }
+    [id] {
+      scroll-margin-top: 2em;
+    }
+    a:link {
+  color: blue;
+ }
+
+  a :visited {
+  color: black;
+  }
+  button:disabled {
+  background: grey;
+  border-color: grey;
+  cursor: not-allowed;
+}
+
+button:enabled {
+  border: 5px solid gold;
+}
+
+button:disabled:hover {
+  box-shadow: none;
+}
+
+
+/* Presentational styles */
+div {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1em;
+}
+:checked {
+  box-shadow: 0px 0px 5px 2px green;
+}
+
+label {
+  font-weight: bold;
+}
+:indeterminate {
+  box-shadow: 0px 0px 5px 2px orange;
+}
+
+label {
+  font-weight: bold;
+}
+
+hr {
+  max-width: 300px;
+  margin: 1em 0 !important;
+}
+input:in-range {
+  background: green;
+  color: white;
+}
+
+input {
+  min-width: 320px;
+  padding: 0.5rem 1rem;
+  line-height: 1;
+  font: inherit;
+  border: 1px solid var(--color-mid);
+  border-radius: 0.25rem;
+}
+
+.info {
+  font-size: 0.9rem;
+  font-style: italic;
+  margin-block-start: 0.5em;
+  max-width: 30ch;
+}
+li:only-child {
+  background: lightyellow;
+}
+
+article {
+  max-width: 60ch;
+}
+
+article > * + * {
+  margin-top: 1.2rem;
+}
+.my-parent div:first-child {
+	color: red;
+}
+/* This won't work */
+.my-parent div:first-child {
+	color: red;
+}
+
+/* This will because it's the first of type */
+.my-parent div:first-of-type {
+	color: red;
+}
+li:nth-child(2) {
+  background: yellow;
+}
+tr:nth-child(even) td {
+  background: #f3f3f3;
+}
+
+table {
+  border: 1px solid var(--color-stroke);
+  border-collapse: collapse;
+}
+
+th {
+  text-align: left;
+  border-bottom: 1px solid var(--color-stroke);
+
+}
+trong:only-of-type {
+  background: yellow;
+}
+.post :empty {
+	display: none;
+}
+
+.post > * + * {
+  margin-top: 2em;
+}
+img:not([alt]) {
+  outline: 6px solid red;
+}
+
+
+img {
+  max-width: 500px;
+}
+/* This CSS is declared before the <link>, so is less specific. */
+.button {
+  background: #ff00ff;
+}
+.my-element {
+	font-size: 1.5rem;
+	font-size: clamp(1.5rem, calc(1rem + 3vw), 2rem);
+}
+
+  </style>  
+<body>
+
+  <p class="first-paragraph"> HELLO WORLD&#183;</p>
+  <p class="second-paragraph"> GUESE WHO IS HERE TODAY &#183;</p>
+  <div data-type='primary'>my name is <strong class="first-word">Riyana</strong></div>
+  <div data-type="secondry">and Iam <strong>cute</strong> </div>
+  <img class="image" src="my-image.jpg">
+  <image class="image" src="my-image2.jpg">
+ <a href="https://youtu.be/OkKB71BHBEM" >click to see my favourite chiness food</a>
+ <p class="address-row">
+
+  <form>
+    <label for="email">Email address</label>
+    <input type="email" id="email" required placeholder="A valid email, like name@domain.com" aria-describedby="emailinfo" />
+    <p class="info" id="emailinfo">Add a valid email address to see the state change</p>
+  </form>
+
+
+  <h1>focus within</h1>
+  <div class="form-container">
+    <input type="password class=password"placeholder="choose password"/>
+    <div class="password-prompt">* must use 3 digits, 4 letters,1 caplized letter,2 dogs,and 2.4 special characters
+    </div>
+  </div>
+  <article class="wrapper flow">
+    <figure class="callout">
+    <p>
+     when you click this button,there will no focus ring,but when you focus with 
+     your tab key,the focus ring will show.
+  </p>
+  </figure>
+  <button class="button">
+    IAM A BUTTON
+  </button>
+</article>
+<main class="wrapper">
+  <article class="flow">
+    <h1>my pizza dough recipe</h1>
+    <p>
+      <a href="#recipe"
+      class="button-bar">skip to the recipe</a>
+    </p>
+    <p>
+      Here are several paragraphs of back-story: Fusce dapibus, tellus ac cursus commodo,
+       tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Curabitur blandit tempus porttitor. Vestibulum id ligula porta felis euismod semper. Nullam quis
+       risus eget urna mollis ornare vel eu leo. Cras mattis consectetur purus sit amet fermentum.
+    </p>
+    <p>
+      Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
+       Donec sed odio dui. Donec id elit non mi porta gravida at eget metus.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    </p>
+    <p>
+      Etiam porta sem malesuada magna mollis euismod. Nullam id dolor
+       id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, 
+       egestas eget quam. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. 
+       Cras justo odio, dapibus ac facilisis in, egestas eget quam.
+    </p>
+    <p>
+      Donec ullamcorper nulla non metus auctor fringilla. 
+      Donec id elit non mi porta gravida at eget metus. Cum sociis natoque penatibus et
+       magnis dis parturient montes, nascetur ridiculus mus. Cras justo odio, dapibus ac facilisis in, 
+       egestas eget quam. Donec id elit non mi porta gravida at eget metus. Morbi leo risus, porta ac consectetur ac, 
+       vestibulum at eros.
+    </p>
+    <h2 id="recipe">
+      Here is the actual recipe
+    </h2>
+    <p>
+      Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
+       Donec sed odio dui. Donec id elit non mi porta gravida at eget metus. Lorem ipsum dolor sit amet, 
+       consectetur adipiscing elit.
+    </p>
+    <p>
+      Etiam porta sem malesuada magna mollis euismod. 
+      Nullam id dolor id nibh ultricies vehicula ut id elit.
+       Cras justo odio, dapibus ac facilisis in, egestas eget quam. 
+       Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. 
+       Cras justo odio, dapibus ac facilisis in, egestas eget quam.
+    </p>
+    <p>
+      Donec ullamcorper nulla non metus auctor fringilla. Donec id elit non mi porta gravida at eget metus. 
+      Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Cras justo odio, 
+      dapibus ac facilisis in, egestas eget quam.
+       Donec id elit non mi porta gravida at eget metus. 
+       Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
+    </p>
+    </article>
+</main>
+<div class="wrapper">
+  <article class="flow">
+    <h1>The <code>:visited</code> and <code>:link</code> states</h1>
+    <figure class="callout">
+      <p>Visit the links then come back to see the style change. Links that haven’t been visited will be blue and links that have been visited will be black.</p>
+    </figure>
+    <nav>
+      <ul>
+        <li>
+          <a target="_blank" href="https://developer.mozilla.org">MDN</a>
+        </li>
+        <li>
+          <a target="_blank" href="https://developer.mozilla.org">web.dev</a>
+        </li>
+        <li>
+          <a target="_blank" href="https://stackoverflow.com">StackOverflow</a>
+        </li>
+        <li>
+          <a target="_blank" href="https://example.com">Example.com</a>
+        </li>
+      </ul>
+    </nav>
+  </article>
+</div>
+<div>
+  <button disabled>I am a button with a disabled state</button>
+  <button>I am an enabled button</button>
+</div>
+<div class="wrapper">
+  <label>
+    <input type="checkbox" />
+    Check me
+  </label>
+  <label>
+    <input type="checkbox" />
+    Check me too
+  </label>
+</div>
+<div class="wrapper">
+  <label>
+    <input type="checkbox" id="all" />
+    Check all
+  </label>
+  <hr />
+  <label>
+    <input type="checkbox" />
+    Toggle me
+  </label>
+  <label>
+    <input type="checkbox" />
+    Toggle me too
+  </label>
+</div>
+<form>
+  <label for="number">Change the number</label>
+  <input type="number" id="number" aria-describedby="numberinfo" min="1" max="10" value="15" />
+  <p class="info" id="numberinfo">Change the number to be between 1 and 10 to see the in-range state</p>
+</form>
+<article>
+  <p>One item in a list</p>
+  <ul>
+    <li>I am the only list item</li>
+  </ul>
+  <p>Multiple items in a list</p>
+  <ul>
+    <li>I am one of many list items</li>
+    <li>Nullam id dolor id nibh ultricies vehicula ut id elit.</li>
+    <li>Cras mattis consectetur purus sit amet fermentum.</li>
+  </ul>
+</article>
+<div class="my-parent">
+	<p>A paragraph</p>
+	<div>A div</div>
+	<div>Another div</div>
+</div>
+<div class="my-parent">
+	<p>A paragraph</p>
+	<div>A div</div>
+	<div>Another div</div>
+</div>
+<article>
+  <ul>
+    <li>I am one of many list items</li>
+    <li>I have a highlight because I am the second child</li>
+    <li>Nullam id dolor id nibh ultricies vehicula ut id elit.</li>
+    <li>Cras mattis consectetur purus sit amet fermentum.</li>
+  </ul>
+</article>
+<table>
+  <thead>
+    <tr>
+      <th>Description</th>
+      <th>Amount</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Lorem ipsum dolor sit amet</td>
+      <td>£123.40</td>
+    </tr>
+    <tr>
+      <article>
+        <p>The only <strong>bold element</strong> in this paragraph gets a highlight style. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+      </article>
+      <article class="post">
+        <p>Donec ullamcorper nulla non metus auctor fringilla.</p>
+        <p></p>
+        <p>Curabitur blandit tempus porttitor.</p>
+       </article>
+       <img src="https://source.unsplash.com/Jnhjif7lHEE/800x600" />
+       <link rel="stylesheet" href="https://codepen.io/web-dot-dev/pen/abpoXGZ.css" />
+<link rel="stylesheet" href="https://codepen.io/web-dot-dev/pen/bGgNodr.css" />
+<main>
+  <div class="wrapper">
+    <article class="flow">
+      <h1>Cascade position order</h1>
+      <figure class="callout">
+        <p>
+          The button has a blue background, as defined by <a href="https://codepen.io/piccalilli/pen/d0b29f89bdec23929c3847ed01bd7a1d.css">this CSS</a>, which is grabbed by a <code>&lt;link /&gt;</code>.
+          A CSS rule that sets it to be dark is grabbed by another <code>&lt;link /&gt;</code> and is applied because of its later position.
+        </p>
+      </figure>
+      <button class="button">
+        My background has been set by the second link element.
+      </button>
+    </article>
+  </div>
+</main>
+
+<!-- This link element is declared after the CSS in the editor so will be more specific -->
+<link rel="stylesheet" href="https://codepen.io/web-dot-dev/pen/abpoXGZ.css" />
+<main>
+  <div class="wrapper">
+    <article class="flow">
+      <h1>Cascade position order</h1>
+      <figure class="callout">
+        <p>The <code>&lt;style&gt;</code> element is declared in the <code>&lt;head&gt;</code>, while the <code>&lt;link&gt;</code> element is declared in the <code>&lt;body&gt;</code>. This means the <code>&lt;link&gt;</code> gets more specificity than the <code>&lt;style&gt;</code> element and the blue hex code (<code>#3740ff</code>) is applied to the button’s background.</p>
+      </figure>
+      <button class="button">
+        My background has been set by the second link element.
+      </button>
+    </article>
+  </div>
+</main>
+<article class="wrapper">
+  <p class="my-element">If the browser supports the clamp property, this text will be sized fluidly as you resize the page. If not, the browser will ignore the clamp value because it doesn’t understand it.</p>
+</article>
+</body>
+</html> 
